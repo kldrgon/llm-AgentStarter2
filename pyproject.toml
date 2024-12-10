@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "chat-news"
+version = "0.1.0"
+description = "llm组简易新闻问答系统"
+authors = ["chenyibing <chenyibing@pami-ai.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.3.10"
+dashscope = "^1.20.14"
+langchain-community = "^0.3.10"
+chainlit = "^1.3.2"
+pydantic = "2.10.1"
+grpcio = "1.67.1"
+beautifulsoup4 = "^4.12.3"
+pydantic-settings = "^2.6.1"
+faiss-cpu = "^1.9.0.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
